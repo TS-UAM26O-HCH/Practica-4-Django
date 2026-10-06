@@ -45,7 +45,7 @@ class UsuarioViewSet(viewsets.ViewSet):
 
         except UsuarioProhibido_403 as e:
             return Response({"error": str(e)}, status=status.HTTP_403_FORBIDDEN)
-        
+
         except ErrorInternoServidor_500 as e:
             return Response(
                 {"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
