@@ -1,0 +1,26 @@
+[project]
+name = "practica4"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Harold Camacho Herrera", email = "haroldherrera2001@outlook.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django==6.1.1",
+    "django-cors-headers>=4.9.0",
+    "django-filter>=26.2",
+    "djangorestframework>=3.18.1",
+    "drf-yasg>=1.21.17",
+    "psycopg2-binary>=2.9.13",
+    "python-decouple>=3.8",
+    "ruff>=0.16.10",
+]
+
+[project.scripts]
+practica4 = "practica4:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
