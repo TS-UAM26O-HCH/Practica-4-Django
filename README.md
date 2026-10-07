@@ -39,6 +39,7 @@ Preparar el entorno con la Base de Datos
 
 ```bash
 python3 manage.py makemigrations gestion_usuarios
+python3 manage.py makemigrations gestion_productos
 python3 manage.py migrate
 python3 manage.py check
 python3 manage.py runserver
@@ -47,6 +48,7 @@ python3 manage.py runserver
 ```bash
 # uv
 uv run manage.py makemigrations gestion_usuarios
+uv run manage.py makemigrations gestion_productos
 uv run manage.py migrate
 uv run manage.py check
 uv run manage.py runserver
