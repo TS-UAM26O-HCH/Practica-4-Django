@@ -42,6 +42,7 @@ python3 manage.py makemigrations gestion_usuarios
 python3 manage.py makemigrations gestion_productos
 python3 manage.py migrate
 python3 manage.py check
+python3 manage.py initadmin
 python3 manage.py runserver
 ```
 
@@ -51,6 +52,7 @@ uv run manage.py makemigrations gestion_usuarios
 uv run manage.py makemigrations gestion_productos
 uv run manage.py migrate
 uv run manage.py check
+uv run manage.py initadmin
 uv run manage.py runserver
 ```
 
@@ -59,3 +61,17 @@ Visualizacion de la API
 ```
 http://127.0.0.1:8000/swagger/
 ```
+
+Para el uso de la api es necesario _autenticacion_
+
+Dentro del endpoint "auth/token/
+Ingresar las credenciales Hardcodeadas en ...gestion_usuarios/management/commands/initadmin.py
+
+```
+Admin
+AdminApiDjango123
+```
+
+Copiar el Access Token sin comillas y dentro de el boton `Authorize` de Swagger ingresar:
+
+`Bearer` seguida del access token dejando un espacio

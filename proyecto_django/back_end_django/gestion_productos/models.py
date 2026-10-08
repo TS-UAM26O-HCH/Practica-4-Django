@@ -3,7 +3,6 @@ import uuid
 
 
 class Productos(models.Model):
-    # FIX (fatal): agregué la indentación dentro de la clase para que el archivo sea Python válido.
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at = models.DateTimeField(auto_now=True)
